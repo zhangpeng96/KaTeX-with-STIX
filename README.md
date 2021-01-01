@@ -1,1 +1,1 @@
-# KaTeX-with-STIX
+# KaTeX with STIX
