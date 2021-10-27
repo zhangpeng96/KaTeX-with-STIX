@@ -10184,9 +10184,9 @@ var array_htmlBuilder = function htmlBuilder(group, options) {
 
   var jot = 3 * pt;
   var arrayskip = group.arraystretch * baselineskip;
-  var arstrutHeight = 0.7 * arrayskip; // \strutbox in ltfsstrc.dtx and
+  var arstrutHeight = 0.695 * arrayskip; // \strutbox in ltfsstrc.dtx and
 
-  var arstrutDepth = 0.3 * arrayskip; // \@arstrutbox in lttab.dtx
+  var arstrutDepth = 0.405 * arrayskip; // \@arstrutbox in lttab.dtx
 
   var totalHeight = 0; // Set a position for \hline(s) at the top of the array, if any.
 
@@ -10739,6 +10739,7 @@ defineEnvironment({
 
     var colAlign = "c";
     var payload = {
+      arraystretch: 1.5,
       hskipBeforeAndAfter: false,
       cols: [{
         type: "align",
@@ -10869,7 +10870,7 @@ defineEnvironment({
   },
   handler: function handler(context) {
     var payload = {
-      arraystretch: 1.2,
+      arraystretch: 1.5,
       cols: [{
         type: "align",
         align: "l",
